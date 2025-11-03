@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-10-23T21:55:40.539Z",
+    "end": "2025-10-23T21:55:44.494Z",
+    "duration": 3955,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "94998d16-4bd7-4425-a8eb-53d68c3a3136",
+      "title": "",
+      "fullFile": "cypress\\e2e\\api-perfil.cy.js",
+      "file": "cypress\\e2e\\api-perfil.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "70ea38dd-5410-4aca-821f-cc647b2104eb",
+          "title": "Api Adopet",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Nome do perfil",
+              "fullTitle": "Api Adopet Nome do perfil",
+              "timedOut": null,
+              "duration": 3906,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'GET',\n  url: 'https://adopet-api-i8qu.onrender.com/adotante/perfil/4abfe424-fbac-4f73-8ede-a3083abf0ab7',\n  headers: {\n    authorization\n  }\n}).then(res => {\n  expect(res.status).to.be.equal(200);\n  expect(res.body).is.not.empty;\n  expect(res.body).to.have.property('perfil');\n  expect(res.body.perfil.nome).to.be.equal('Carlos Alberto');\n});",
+              "err": {},
+              "uuid": "6405f3e3-3795-4d10-bcf3-e7af53e18f53",
+              "parentUUID": "70ea38dd-5410-4aca-821f-cc647b2104eb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6405f3e3-3795-4d10-bcf3-e7af53e18f53"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3906,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.0"
+    }
+  }
+}

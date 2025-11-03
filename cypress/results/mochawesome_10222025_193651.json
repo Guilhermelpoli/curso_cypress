@@ -1,0 +1,201 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-10-22T22:36:32.365Z",
+    "end": "2025-10-22T22:36:51.748Z",
+    "duration": 19383,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ce30c21d-11df-499c-b888-60d5c6303a7f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cadastro-massa.cy.js",
+      "file": "cypress\\e2e\\cadastro-massa.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a471d181-6cf7-4757-9df0-17fcab76ba44",
+          "title": "Página de cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve preencher os camps do formulario corretamente para cadastrar um novo usuário",
+              "fullTitle": "Página de cadastro Deve preencher os camps do formulario corretamente para cadastrar um novo usuário",
+              "timedOut": null,
+              "duration": 3497,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"input-name\"]').clear().type(usuarios.name);\ncy.get('[data-test=\"input-email\"]').clear().type(usuarios.email);\ncy.get('[data-test=\"input-password\"]').clear().type(usuarios.password);\ncy.get('[data-test=\"input-confirm-password\"]').clear().type(usuarios.password);\ncy.get('[data-test=\"submit-button\"]').click();",
+              "err": {},
+              "uuid": "a0d2b1d7-e0f2-4598-be00-596eac2c90ab",
+              "parentUUID": "a471d181-6cf7-4757-9df0-17fcab76ba44",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve preencher os camps do formulario corretamente para cadastrar um novo usuário",
+              "fullTitle": "Página de cadastro Deve preencher os camps do formulario corretamente para cadastrar um novo usuário",
+              "timedOut": null,
+              "duration": 2965,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"input-name\"]').clear().type(usuarios.name);\ncy.get('[data-test=\"input-email\"]').clear().type(usuarios.email);\ncy.get('[data-test=\"input-password\"]').clear().type(usuarios.password);\ncy.get('[data-test=\"input-confirm-password\"]').clear().type(usuarios.password);\ncy.get('[data-test=\"submit-button\"]').click();",
+              "err": {},
+              "uuid": "22c49ba6-7af0-4f66-b853-e37aefcbed2c",
+              "parentUUID": "a471d181-6cf7-4757-9df0-17fcab76ba44",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve preencher os camps do formulario corretamente para cadastrar um novo usuário",
+              "fullTitle": "Página de cadastro Deve preencher os camps do formulario corretamente para cadastrar um novo usuário",
+              "timedOut": null,
+              "duration": 3156,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"input-name\"]').clear().type(usuarios.name);\ncy.get('[data-test=\"input-email\"]').clear().type(usuarios.email);\ncy.get('[data-test=\"input-password\"]').clear().type(usuarios.password);\ncy.get('[data-test=\"input-confirm-password\"]').clear().type(usuarios.password);\ncy.get('[data-test=\"submit-button\"]').click();",
+              "err": {},
+              "uuid": "0c452fec-344d-4756-a504-8da9711638a2",
+              "parentUUID": "a471d181-6cf7-4757-9df0-17fcab76ba44",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve preencher os camps do formulario corretamente para cadastrar um novo usuário",
+              "fullTitle": "Página de cadastro Deve preencher os camps do formulario corretamente para cadastrar um novo usuário",
+              "timedOut": null,
+              "duration": 2490,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"input-name\"]').clear().type(usuarios.name);\ncy.get('[data-test=\"input-email\"]').clear().type(usuarios.email);\ncy.get('[data-test=\"input-password\"]').clear().type(usuarios.password);\ncy.get('[data-test=\"input-confirm-password\"]').clear().type(usuarios.password);\ncy.get('[data-test=\"submit-button\"]').click();",
+              "err": {},
+              "uuid": "f5046ea5-399c-4f33-9abf-a0c06533f832",
+              "parentUUID": "a471d181-6cf7-4757-9df0-17fcab76ba44",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve preencher os camps do formulario corretamente para cadastrar um novo usuário",
+              "fullTitle": "Página de cadastro Deve preencher os camps do formulario corretamente para cadastrar um novo usuário",
+              "timedOut": null,
+              "duration": 2733,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"input-name\"]').clear().type(usuarios.name);\ncy.get('[data-test=\"input-email\"]').clear().type(usuarios.email);\ncy.get('[data-test=\"input-password\"]').clear().type(usuarios.password);\ncy.get('[data-test=\"input-confirm-password\"]').clear().type(usuarios.password);\ncy.get('[data-test=\"submit-button\"]').click();",
+              "err": {},
+              "uuid": "4fec6526-b415-4ca0-8a66-0970ea63a208",
+              "parentUUID": "a471d181-6cf7-4757-9df0-17fcab76ba44",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve preencher os camps do formulario corretamente para cadastrar um novo usuário",
+              "fullTitle": "Página de cadastro Deve preencher os camps do formulario corretamente para cadastrar um novo usuário",
+              "timedOut": null,
+              "duration": 2671,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"input-name\"]').clear().type(usuarios.name);\ncy.get('[data-test=\"input-email\"]').clear().type(usuarios.email);\ncy.get('[data-test=\"input-password\"]').clear().type(usuarios.password);\ncy.get('[data-test=\"input-confirm-password\"]').clear().type(usuarios.password);\ncy.get('[data-test=\"submit-button\"]').click();",
+              "err": {},
+              "uuid": "fb142e0e-daca-4ebe-937e-05c4b44319c5",
+              "parentUUID": "a471d181-6cf7-4757-9df0-17fcab76ba44",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a0d2b1d7-e0f2-4598-be00-596eac2c90ab",
+            "22c49ba6-7af0-4f66-b853-e37aefcbed2c",
+            "0c452fec-344d-4756-a504-8da9711638a2",
+            "f5046ea5-399c-4f33-9abf-a0c06533f832",
+            "4fec6526-b415-4ca0-8a66-0970ea63a208",
+            "fb142e0e-daca-4ebe-937e-05c4b44319c5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 17512,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.0"
+    }
+  }
+}

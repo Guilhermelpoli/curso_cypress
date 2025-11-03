@@ -1,0 +1,127 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-10-21T17:10:12.042Z",
+    "end": "2025-10-21T17:10:18.485Z",
+    "duration": 6443,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "742a1463-6614-4760-995e-570820403ef6",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login-incorreto.cy.js",
+      "file": "cypress\\e2e\\login-incorreto.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "teste",
+          "fullTitle": "teste",
+          "timedOut": null,
+          "duration": 1061,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://adopet-frontend-cypress.vercel.app/');",
+          "err": {},
+          "uuid": "cdbdcc62-72b1-48be-b211-f18bcef51abf",
+          "parentUUID": "742a1463-6614-4760-995e-570820403ef6",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [
+        {
+          "uuid": "568e5f76-5e7a-441b-b605-caff5968cd9d",
+          "title": "Páginas de login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve preencher os campos do login incorretamente e exibir mensagens de erro ao usuário na página",
+              "fullTitle": "Páginas de login Deve preencher os campos do login incorretamente e exibir mensagens de erro ao usuário na página",
+              "timedOut": null,
+              "duration": 2896,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"input-loginEmail\"]').type('marjorie3');\ncy.get('[data-test=\"input-loginPassword\"]').type('123');\ncy.get('[data-test=\"submit-button\"]').click();\ncy.contains('Por favor, verifique o email digitado').should('be.visible');\ncy.contains('A senha deve conter pelo menos uma letra maiúscula, um número e ter entre 6 e 15 caracteres').should('be.visible');",
+              "err": {},
+              "uuid": "e004720b-0b5c-442d-aff2-64ba5db203ca",
+              "parentUUID": "568e5f76-5e7a-441b-b605-caff5968cd9d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e004720b-0b5c-442d-aff2-64ba5db203ca"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2896,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [
+        "cdbdcc62-72b1-48be-b211-f18bcef51abf"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 1061,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.0"
+    }
+  }
+}

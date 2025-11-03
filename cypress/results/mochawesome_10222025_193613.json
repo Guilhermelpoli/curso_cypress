@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-10-22T22:36:12.487Z",
+    "end": "2025-10-22T22:36:13.103Z",
+    "duration": 616,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5660cc7a-b200-4dcd-bf23-cededf2f2a4b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\api-perfil.cy.js",
+      "file": "cypress\\e2e\\api-perfil.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "09e5d22a-4823-45b4-9219-098c6476cef0",
+          "title": "Api Adopet",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Nome do perfil",
+              "fullTitle": "Api Adopet Nome do perfil",
+              "timedOut": null,
+              "duration": 541,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'GET',\n  url: 'https://adopet-api-i8qu.onrender.com/adotante/perfil/0dd7ead6-eb41-45dd-8a75-03b02285bbe7',\n  headers: {\n    authorization\n  }\n}).then(res => {\n  expect(res.status).to.be.equal(200);\n  expect(res.body).is.not.empty;\n  expect(res.body).to.have.property('perfil');\n  expect(res.body.perfil.nome).to.be.equal('Carlos Alberto');\n});",
+              "err": {
+                "message": "AssertionError: expected 'camila' to equal 'Carlos Alberto'",
+                "estack": "AssertionError: expected 'camila' to equal 'Carlos Alberto'\n    at Context.eval (webpack://curso_cypress/./cypress/e2e/api-perfil.cy.js:13:51)\n    at getRet (http://localhost:53195/__cypress/runner/cypress_runner.js:122243:20)\n    at tryCatcher (http://localhost:53195/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (http://localhost:53195/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (http://localhost:53195/__cypress/runner/cypress_runner.js:122254:66)\n    at Context.then (http://localhost:53195/__cypress/runner/cypress_runner.js:122505:21)",
+                "diff": "- 'camila'\n+ 'Carlos Alberto'\n"
+              },
+              "uuid": "4871b203-982d-41ec-99a3-e3be9218c977",
+              "parentUUID": "09e5d22a-4823-45b4-9219-098c6476cef0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "4871b203-982d-41ec-99a3-e3be9218c977"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 541,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.0"
+    }
+  }
+}

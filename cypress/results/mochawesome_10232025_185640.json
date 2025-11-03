@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-10-23T21:56:36.765Z",
+    "end": "2025-10-23T21:56:40.521Z",
+    "duration": 3756,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "17c55250-64d4-408c-b297-e0ef613229ae",
+      "title": "",
+      "fullFile": "cypress\\e2e\\delete.cy.js",
+      "file": "cypress\\e2e\\delete.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "daf99fe9-ac46-4bbb-ae44-6de988b2cd18",
+          "title": "Exemplo todo delete",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Consegue deletar todas as tarefas",
+              "fullTitle": "Exemplo todo delete Consegue deletar todas as tarefas",
+              "timedOut": null,
+              "duration": 847,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('li:nth-child(1) input.toggle').check();\ncy.get('button.clear-completed').click();\ncy.get('.todo-list li label').should('not.contain.text', 'Pay eletric bill');\ncy.contains('Clear completed').should('not.exist');",
+              "err": {},
+              "uuid": "09f8fc5a-cf5c-45dd-b5d0-0f4fa7833494",
+              "parentUUID": "daf99fe9-ac46-4bbb-ae44-6de988b2cd18",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "09f8fc5a-cf5c-45dd-b5d0-0f4fa7833494"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 847,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.0"
+    }
+  }
+}
